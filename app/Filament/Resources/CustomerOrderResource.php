@@ -50,7 +50,7 @@ class CustomerOrderResource extends Resource
                                     ->schema([
                                         TextInput::make('invoice_number')
                                             ->default(static::getNextInvoiceNumber()),
-                                        Select::make('customers')
+                                        Select::make('customer_id')
                                             ->relationship('customers', 'name')
                                             ->label('Customer')
                                             ->required()
