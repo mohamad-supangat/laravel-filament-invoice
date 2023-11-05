@@ -10,7 +10,7 @@ class EditCustomerTag extends EditRecord
 {
     protected static string $resource = CustomerTagResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\DeleteAction::make(),

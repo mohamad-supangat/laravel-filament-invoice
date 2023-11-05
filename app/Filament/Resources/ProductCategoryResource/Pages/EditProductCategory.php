@@ -10,7 +10,7 @@ class EditProductCategory extends EditRecord
 {
     protected static string $resource = ProductCategoryResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\DeleteAction::make(),

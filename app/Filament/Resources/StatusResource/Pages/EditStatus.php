@@ -10,7 +10,7 @@ class EditStatus extends EditRecord
 {
     protected static string $resource = StatusResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\DeleteAction::make(),

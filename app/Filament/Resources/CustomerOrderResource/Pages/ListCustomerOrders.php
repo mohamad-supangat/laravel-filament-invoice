@@ -10,7 +10,7 @@ class ListCustomerOrders extends ListRecords
 {
     protected static string $resource = CustomerOrderResource::class;
 
-    protected function getActions(): array
+    protected function getHeaderActions(): array
     {
         return [
             Actions\CreateAction::make(),
